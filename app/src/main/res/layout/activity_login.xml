@@ -4,99 +4,100 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backgroundImage"
-    tools:context=".LoginActivity">
+    android:background="@drawable/bb"
+    tools:context=".Login">
 
 
     <TextView
-        android:id="@+id/logo"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Login"
-        android:textColor="@color/colorBlack"
-        android:textSize="53sp"
-        android:textStyle="bold"
+        android:text="LOGIN"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.542"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.188" />
+        app:layout_constraintVertical_bias="0.07999998" />
 
     <EditText
-        android:id="@+id/inputPassword"
+        android:id="@+id/inputname"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="32dp"
         android:background="@drawable/input_bg"
-        android:drawableLeft="@drawable/ic_person"
+        android:drawableLeft="@drawable/baseline_person"
         android:drawablePadding="10dp"
         android:ems="10"
         android:hint="Username"
         android:inputType="textPersonName"
-        android:textSize="30sp"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
-        android:textColor="@color/colorBlack"
-        android:textColorHint="@color/colorBlack"
-        app:layout_constraintEnd_toEndOf="@+id/inputEmail"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/inputEmail"
-        app:layout_constraintTop_toBottomOf="@+id/inputEmail" />
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
-        android:id="@+id/inputEmail"
+        android:id="@+id/inputemail"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/input_bg"
-        android:drawableLeft="@drawable/ic_email"
+        android:drawableLeft="@drawable/baseline_security"
         android:drawablePadding="10dp"
         android:ems="10"
-        android:hint="Email"
+        android:hint="E-mail"
         android:inputType="textPersonName"
-        android:textSize="30sp"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
-        android:textColor="@color/colorBlack"
-        android:textColorHint="@color/colorBlack"
+        android:text="Password"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo" />
+        app:layout_constraintTop_toBottomOf="@+id/inputname" />
 
     <TextView
-        android:id="@+id/forgotPassword"
+        android:id="@+id/forgotpassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Forgot Password?"
-        android:textColor="@color/colorBlack"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/inputPassword"
-        app:layout_constraintTop_toBottomOf="@+id/inputPassword" />
+        android:shadowColor="@color/white"
+        android:text="Forgot Password ?"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/inputemail"
+        app:layout_constraintStart_toStartOf="@+id/inputemail"
+        tools:layout_editor_absoluteY="263dp" />
 
     <Button
         android:id="@+id/btnlogin"
-        android:layout_width="200dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:background="@drawable/btn_bg"
-        android:text="Login"
-        app:layout_constraintEnd_toEndOf="@+id/inputPassword"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="@+id/inputPassword"
-        app:layout_constraintTop_toBottomOf="@+id/forgotPassword" />
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:text="LOGIN"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/inputemail"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/inputemail"
+        app:layout_constraintTop_toBottomOf="@+id/inputemail"
+        app:layout_constraintVertical_bias="0.088" />
 
     <LinearLayout
-        android:id="@+id/linearLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -111,57 +112,16 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Dont have an Account?"
-            android:textColor="@color/colorBlack" />
+            android:text="Don't have an account? "
+            android:textColor="@color/white"/>
 
         <TextView
-            android:id="@+id/textViewSignUp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="SignUp"
-            android:textColor="@color/colorRed" />
+            android:text="Register"
+            android:textColor="@color/colorRed"/>
+
 
     </LinearLayout>
-
-    <Button
-        android:id="@+id/btnGoogle"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/btn_bg"
-        android:drawableLeft="@drawable/ic_google"
-        android:drawablePadding="10dp"
-        android:paddingLeft="20dp"
-        android:text="Google"
-        android:textAlignment="textStart"
-        android:textAllCaps="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btnFacebook"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.694" />
-
-    <Button
-        android:id="@+id/btnFacebook"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="32dp"
-        android:background="@drawable/btn_bg"
-        android:drawableStart="@drawable/ic_facebook"
-        android:drawablePadding="10dp"
-        android:paddingLeft="20dp"
-        android:text="Facebook"
-        android:textAlignment="textStart"
-        android:textAllCaps="false"
-        app:layout_constraintBottom_toBottomOf="@+id/btnGoogle"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btnGoogle"
-        app:layout_constraintTop_toTopOf="@+id/btnGoogle"
-        app:layout_constraintVertical_bias="1.0" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
